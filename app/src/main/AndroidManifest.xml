@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.ansel.coountrynews">
+
+    <!--Umeng ApiKey : 595f1b2199f0c75acf00060d-->
+    <!--
+    新浪
+        App Key：2041625875
+        App Secret：ad842898cc62886689c76eea006bc5fa
+    -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

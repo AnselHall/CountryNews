@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ansel.coountrynews.MainActivity">
+
+    <!--<include-->
+    <!--android:id="@+id/title"-->
+    <!--layout="@layout/layout_title"/>-->
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <ImageView
+            android:id="@+id/iv_news"
+            style="@style/BottomItem"
+            android:src="@mipmap/bottom_news_color"/>
+
+        <ImageView
+            android:id="@+id/iv_tv"
+            style="@style/BottomItem"
+            android:src="@mipmap/bottom_tv"/>
+
+        <ImageView
+            android:id="@+id/iv_service"
+            style="@style/BottomItem"
+            android:src="@mipmap/bottom_service"/>
+
+        <ImageView
+            android:id="@+id/iv_interaction"
+            style="@style/BottomItem"
+            android:src="@mipmap/bottom_interaction"/>
+
+        <ImageView
+            android:id="@+id/iv_my"
+            style="@style/BottomItem"
+            android:src="@mipmap/bottom_my"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@id/ll_bottom"
+        android:background="@android:color/darker_gray"
+        />
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/view"
+        >
+
+    </FrameLayout>
+</RelativeLayout>
