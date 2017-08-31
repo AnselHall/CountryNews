@@ -16,6 +16,7 @@ public abstract class BaseActivity extends FragmentActivity {
 
     private boolean isSetStatusBar=true;
 
+
     //    public static Activity mActivity;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
